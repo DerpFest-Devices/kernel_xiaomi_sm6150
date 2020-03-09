@@ -231,6 +231,7 @@ struct dsi_panel {
 	struct dsi_parser_utils utils;
 
 	int hbm_mode;
+	bool resend_ea;
 	bool is_tddi_flag;
 	bool panel_dead_flag;
 
