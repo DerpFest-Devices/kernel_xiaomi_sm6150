@@ -232,6 +232,7 @@ struct dsi_panel {
 
 	int hbm_mode;
 	bool resend_ea;
+	bool resend_ea_hbm;
 	bool is_tddi_flag;
 	bool panel_dead_flag;
 
