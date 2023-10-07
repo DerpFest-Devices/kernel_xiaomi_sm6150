@@ -15,3 +15,16 @@
 #include "davinci-sdmmagpie-pinctrl.dtsi"
 #include "davinci-sdmmagpie-qrd.dtsi"
 #include "davinci-sdmmagpie-touchscreen.dtsi"
+
+&firmware {
+    android {
+        vbmeta {
+            parts = "vbmeta,boot,recovery,system,vendor,dtbo";
+        };
+        fstab {
+            vendor {
+                fsmgr_flags = "wait,avb";
+            };
+        };
+    };
+};
